@@ -1,0 +1,167 @@
+MARK MY WORD
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int marks;
+    char grade;
+
+    cout << "Please enter marks : " << "\n";
+    cin >> marks;
+
+    if (marks >= 70 && marks <= 100)
+        grade = 'A';
+
+    else if (marks >= 60 && marks < 70)
+        grade = 'B';
+
+    else if (marks >= 50 && marks < 60)
+        grade = 'C';
+
+    else if (marks >= 40 && marks < 50)
+        grade = 'D';
+
+    else
+        grade = 'F';
+
+    cout << "You got " << grade << "!" << "\n";
+
+    return 0;
+}
+====================================================
+STARTING A BAND
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	bool bandmate = true;
+	string bandmate1 = "Drum";
+	cout << "What instrument do you play? " << "\n";
+	cin >> bandmate1;
+	if (bandmate == true) {
+		if (bandmate1 == "Guitar") {
+			cout << "Sorry, you may not join because we have 2 guitarists already.";
+		}
+		if (bandmate1 == "Drum") {
+			cout << "You may join since we have no drummer.";
+		}
+	}
+	else {
+		cout << "You may not join the band.";
+	}
+}
+==================================================
+EARTHQUAKE MAGNITUDE
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int Magnitude;
+    
+
+    cout << "Please enter magnitude : " << "\n";
+    cin >> Magnitude;
+
+    if (Magnitude >= 8.0 && Magnitude <= 10.0) {
+        cout << "Great";
+    }
+
+    else if (Magnitude >= 7.0 && Magnitude < 8.0) {
+        cout << "Major";
+    }
+
+    else   if (Magnitude >= 6.0 && Magnitude < 7.0) {
+        cout << "Strong";
+    }
+
+    else if (Magnitude >= 5.0 && Magnitude < 6.0) {
+        cout << "Moderate";
+    }
+
+    else if (Magnitude >= 4.0 && Magnitude < 5.0) {
+        cout << "Light";
+    }
+
+    else if (Magnitude >= 3.0 && Magnitude < 4.0) {
+        cout << "Minor";
+    }
+
+
+    else   if (Magnitude >= 2.0 && Magnitude < 3.0) {
+        cout << "Very minor";
+    }
+
+
+    else  if (Magnitude < 2.0) {
+        cout << "Micro";
+    }
+    else if (Magnitude < 11.0) {
+        cout << "Meteoric";
+    }
+
+    return 0;
+}
+=========================================================
+KILLING THE TIME
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+    char opt;
+    int time, cash = 0;
+
+
+    cout << "You are killing time in Dubai mall, waiting for you friend who is always late. \nYou recieve a text tellin you how he/she is going to be." << "\n";
+    cout << "How long are they gonna be late for?: \n";
+    cin >> time;
+
+
+    if (time >= 15) {
+        cout << "Do you have some cash in your wallet or pocket? \n";
+        cin >> opt;
+
+        if (tolower(opt) == 'y') {
+            cout << "Do you have some cash in your wallet or pocket? \n";
+
+            if (cash >= 5) {
+                cout << "Go to starbucks, and buy a cup of coffee. \n";
+
+            }
+
+            else {
+                cout << "Walk around the town then. \n";
+            }
+
+        }
+
+        else if (tolower(opt) == 'n') {
+            cout << "Walk around the town then.";
+        }
+
+        else {
+            cout << "Go to starbucks, and buy a cup of coffee.";
+        }
+
+    }
+
+         else {
+             cout << "Find a seat and wait in the food zone.";
+        }
+    }
+
